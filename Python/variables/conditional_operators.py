@@ -13,3 +13,5 @@ elif x < 0:
     print("x < 0")
 else:
     print("x == 0")
+
+my_string = "hello world"
