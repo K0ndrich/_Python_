@@ -13,3 +13,4 @@ full_name = first_name + " " + last_name
 
 # len функция возвращает длину строки
 lenght_string = len(my_string1)
+
