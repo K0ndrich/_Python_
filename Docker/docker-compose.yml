@@ -1,5 +1,5 @@
 # указываем какую версию docker-compose будем использовать
-version: '3'
+version: '3.9'
 
 # services создаем поле для сервисов
 services:
@@ -7,4 +7,5 @@ services:
   api: 
     # build указываем где лежит наш Dockerfile для текущего сервиса
     # сервия будет создавать из нашего Dockerfile, который лежит внутри текущего проекта
+    # build: [путь к Dockerfile]
     build: ./api
