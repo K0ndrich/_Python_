@@ -1,9 +1,9 @@
 # простая строка
-my_string1 = "Hello World"
+my_short_string = "Hello World"
 
 
 # строка содержит большое количество текста, отступы при етом сохраняютсья
-my_string2 = """Text Text Text 
+my_long_string = """Text Text Text 
 Text Text Text Text Text Text
                     Text Text Text"""
 
