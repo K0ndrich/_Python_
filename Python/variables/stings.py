@@ -43,14 +43,15 @@ my_string = "hello {:%}".format(123.3)  # -> "hello 12330.000000%"
 my_string = "text"
 
 # .upper() метод возвращает значение строки в верхнем регистре
-my_string.upper()
+my_string.upper()  # -> "TEXT"
 
 # .lower() метод возвращает значение строки в нижнем регистре
-my_string.lower()
+my_string.lower()  # -> "text"
 
 # .strip() убирате пробели до и после текста, тем самым уменьшает длину строки
-my_string = "    text    ---  "
-my_string.strip()
+my_string = "    text    "
+my_string.strip()  # -> "text"
+
 
 # .replace("old_text" , "new_text") изменяет указаную часть текста на новую
 my_string = "hello world"
@@ -58,12 +59,12 @@ my_string.replace("world", "max")  # -> "hello max"
 
 # .count() возвращет количество указаных символом в строке
 my_string = "text text text"
-my_string.count("t")
+my_string.count("t")  # -> 6
 
 # .isdigit() возвращает True если строка состоит полность из цифр (нету букв)
 my_string = "123"
-my_string.isdigit()
+my_string.isdigit()  # -> True
 
 # .isalpha() возвращает True если строка состоит полностью из букв (нету цифр)
 my_string = "abc"
-my_string.isalpha()
+my_string.isalpha()  # -> True
