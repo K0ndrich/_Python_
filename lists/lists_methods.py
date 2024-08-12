@@ -35,6 +35,6 @@ my_list.count(3)  # -> 4
 my_list = [1, 2, 3, 4]
 my_list.reverse()  # -> [4, 3, 2, 1]
 
-# .clear() удалем все елементы списка
+# .clear() удалет все елементы списка
 my_list = [1, 2, 3, 4]
 my_list.clear()  # -> [ ]
