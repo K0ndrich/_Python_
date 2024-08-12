@@ -15,7 +15,7 @@ full_name = first_name + " " + last_name
 
 
 # len функция возвращает длину строки
-lenght_string = len(my_string1)
+lenght_string = len(my_long_string)
 
 
 my_first_string = "Max Kondrich"
@@ -68,3 +68,8 @@ my_string.isdigit()  # -> True
 # .isalpha() возвращает True если строка состоит полностью из букв (нету цифр)
 my_string = "abc"
 my_string.isalpha()  # -> True
+
+
+# .format подставляет указаные значение в строку в указаной полседовательности
+my_string = "{0},{1},{2}".format("a", "b", "c")  # -> a, b, c
+my_string = "{0},{1},{0}".format("a", "b", "c")  # -> a, b, a
