@@ -35,6 +35,25 @@ my_list.count(3)  # -> 4
 my_list = [1, 2, 3, 4]
 my_list.reverse()  # -> [4, 3, 2, 1]
 
+# .sort() сортирует от меньшего к большему (reverse=True от большего к меньшему)
+my_list = [3, 6, 4, 2, 1, 8, 2]
+my_list.sort()  # -> [1, 2, 2, 3, 4, 6, 8]
+my_list.sort(reverse=True)  # -> [8, 6, 4, 3, 2, 2, 1]
+
+# .join(my_list) обединяет елементи с писка в одну строку
+my_list = ["h", "e", "l", "l", "o"]
+my_string = "".join(my_list)  # -> hello
+my_string = "-".join(my_list)  # -> h-e-l-l-o
+
+# max(my_list)   min(my_list) возвращают максимальные и минимальные значение в указаной списке
+my_list = [3, 6, 7, 3, 2, 1, 7, 9]
+max(my_list)  # -> 9
+min(my_list)  # -> 1
+
+# sum(my_list) возвращает суму все значений списка
+my_list = [3, 6, 7, 3, 2, 1, 7, 9]
+sum(my_list)  # -> 38
+
 # .clear() удалет все елементы списка
 my_list = [1, 2, 3, 4]
 my_list.clear()  # -> [ ]

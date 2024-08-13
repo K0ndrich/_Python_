@@ -30,7 +30,11 @@ my_string.isdigit()  # -> True
 my_string = "abc"
 my_string.isalpha()  # -> True
 
-
 # .format подставляет указаные значение в строку в указаной полседовательности
 my_string = "{0},{1},{2}".format("a", "b", "c")  # -> a, b, c
 my_string = "{0},{1},{0}".format("a", "b", "c")  # -> a, b, a
+
+# .split("my_symbol") розделяет строку по указаному символу(или пробелу) и возвращает список елементов
+my_string = "hello - world"
+my_string.split()  # -> ['hello', '-', 'world']
+my_string.split("-")  # -> ['hello ', ' world']
