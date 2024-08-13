@@ -5,8 +5,8 @@ x, y = y, x
 
 
 # узнаем тип переменной
-my_variable1 = 1
-print(type(my_variable1))
+my_variable = 1
+type(my_variable)  # -> <class 'int'>
 
 
 # добавление
@@ -25,6 +25,4 @@ f = 5 // 2
 g = 5 % 2
 
 # round округляет число по правилам арифметики
-my_variable2 = round(1.5)
-print(my_variable2)
-
+my_variable = round(1.5)  # -> 2
