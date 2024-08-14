@@ -15,4 +15,31 @@ for symbol in my_symbols:
 my_students = ["Max", "Oleg", "Sana", "Slavik"]
 for student in my_students:
     for symbol in student:
-        print(symbol)
+        # print(symbol)
+        pass
+
+
+# continue пропуская одну итерацию цикла
+my_numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+for number in my_numbers:
+    if number % 2 == 0:  # -> True если число четное
+        continue
+    # print(number)
+    pass
+
+
+# break полностью выходит из цикла
+my_numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+for number in my_numbers:
+    if number == 7:  # -> True если число четное
+        break
+    # print(number)
+    pass
+
+
+# изменяем значение елемнетов списка по их индексу
+my_numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+for index in range(len(my_numbers)):  # index -> [0, 1, 2, 3, 4, 5, 6, 7, 8]
+    my_numbers[index] *= 2
+
+my_numbers  # -> [2, 4, 6, 8, 10, 12, 14, 16, 18]
