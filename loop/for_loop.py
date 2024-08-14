@@ -43,3 +43,16 @@ for index in range(len(my_numbers)):  # index -> [0, 1, 2, 3, 4, 5, 6, 7, 8]
     my_numbers[index] *= 2
 
 my_numbers  # -> [2, 4, 6, 8, 10, 12, 14, 16, 18]
+
+
+# подсчитываем количество и индексы указаного значения в строке
+my_string = "Hello - world"
+indexes = []
+count = 0
+for i in range(len(my_string)):
+    if my_string[i] == "o":
+        count += 1
+        indexes.append(i)
+
+print(count)
+print(indexes)
