@@ -34,7 +34,7 @@ def my_function(a=3, b=5):
     return a + b
 
 
-# тяжовый вид
+# тежолый вид
 def my_function(my_number: int = 5) -> int:
     pass
 
