@@ -21,14 +21,23 @@ x >= y
 x <= y
 
 
-# not ==>
-# not True  -> False
-# not False -> True
-not False
+# NOT
+not True  # -> False
+not False  # -> True
+not 3  # -> False
+not -1  # -> False
+not 0  # -> True
 
 
-# and ==>
-# True  + True  -> True
-# False + True  -> False
-# False + False -> False
-x > 5 and y < 2
+# AND
+True and True  # -> True
+False and True  # -> False
+False and False  # -> False
+5 > 3 and 1 < 2  # -> True
+3 > 5 and 1 < 2  # -> False
+
+
+# OR
+True or True  # -> True
+True or False  # -> True
+False or False  # -> False

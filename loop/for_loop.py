@@ -1,5 +1,5 @@
-# Цыкл For
-# Итерация - один проход цикла
+# Цикл For
+# Итерация - однократное выполнение тела цикла 
 
 
 my_symbols = ["a", "b", "c", "b", "b", "g"]
@@ -11,7 +11,7 @@ for symbol in my_symbols:
         my_count += 1
 
 
-# вложенные цыкли
+# вложенные цикли
 my_students = ["Max", "Oleg", "Sana", "Slavik"]
 for student in my_students:
     for symbol in student:
