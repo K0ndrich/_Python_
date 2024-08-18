@@ -35,7 +35,8 @@ age = 25
 number = 10
 f"-- hello {name} -> {age} --"  # -> -- hello Kondrich -> 25 --
 f"-- {age*number} --"  # -> -- 250 --
-
+# укороченая форма записи
+f"{name=}"  # -> name='Kondrich'
 
 # .format позволяет вставлять внутрь строки оперделенные указаные значения
 my_string = "hello {my_value}".format(my_value="123")  # -> "hello 123"
