@@ -2,7 +2,7 @@
 
 # создание списков
 my_list = ["apple", "bananas", "cherry"]  # -> ['apple', 'bananas', 'cherry']
-my_list3 = ["yes", "3.5", "True", [1, 2, 3]]  # -> ["yes", "3.5", "True", [1, 2, 3]]
+my_list = ["yes", "3.5", "True", [1, 2, 3]]  # -> ["yes", "3.5", "True", [1, 2, 3]]
 my_list = list("abcdf")  # -> ['a', 'b', 'c', 'd', 'f']
 
 # создаем список с помощью переменных
