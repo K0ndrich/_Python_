@@ -20,3 +20,19 @@ my_dict["new"] = (
 # логическое значение словаря
 bool({})  # -> False
 bool({"my_key1": 777})  # -> True
+
+# итерация происходит по ключу в словаре
+for my_key in my_dict:
+    my_key  # -> name , age , city , new
+
+
+for my_pair in my_dict.items():
+
+    # разпаковуем полученый набор кортежей
+    my_key, my_value = my_pair
+
+    type(my_pair)  # -> <class 'tuple'>
+    my_pair  # -> ('name', 'Max') , ('age', 666) , ('city', 'New York') , ('new', 'new')
+
+    my_key  # -> name , age , city , new
+    my_value  # -> Max , 666 , New York , new
