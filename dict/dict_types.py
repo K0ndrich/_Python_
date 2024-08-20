@@ -35,4 +35,4 @@ for my_pair in my_dict.items():
     my_pair  # -> ('name', 'Max') , ('age', 666) , ('city', 'New York') , ('new', 'new')
 
     my_key  # -> name , age , city , new
-    my_value  # -> Max , 666 , New York , new
+    my_value  # -> Max , 666 , New York , new  
