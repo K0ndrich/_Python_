@@ -21,11 +21,13 @@ my_dict["new"] = (
 bool({})  # -> False
 bool({"my_key1": 777})  # -> True
 
+
 # итерация происходит по ключу в словаре
 for my_key in my_dict:
     my_key  # -> name , age , city , new
 
 
+# берем названия ключей и их значения по другому
 for my_pair in my_dict.items():
 
     # разпаковуем полученый набор кортежей
@@ -35,4 +37,10 @@ for my_pair in my_dict.items():
     my_pair  # -> ('name', 'Max') , ('age', 666) , ('city', 'New York') , ('new', 'new')
 
     my_key  # -> name , age , city , new
-    my_value  # -> Max , 666 , New York , new  
+    my_value  # -> Max , 666 , New York , new
+
+
+# берем названия ключей и их значения по другому
+for my_key, my_value in my_dict.items():
+    my_key  # -> name , age , city , new
+    my_value  # -> Max , 666 , New York , new
