@@ -7,6 +7,8 @@ globals().keys()  # -> dict_keys([ 'my_module', '__name__', '__doc__', '__packag
 
 import random
 
-my_list = [1, 2, 3]
+# dir(my_module) возвращает методы которыми можна пользоваться из указаного модуля
+dir(
+    random
+)  # -> [ _index', '_inst', '_isfinite', '_lgamma', '_log', '_log2', '_os', '_pi', '_random' ]
 
-print(random.choice(my_list))
