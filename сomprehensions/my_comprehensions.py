@@ -13,6 +13,7 @@ my_list = [
 
 # 2) Генераторы Множеств
 my_set = {a for a in range(10) if a % 2 == 0}  # -> {0, 2, 4, 6, 8}
+my_set = {a**2 for a in range(5)}  # -> {0, 1, 4, 9, 16}
 type(my_set)  # -> <class 'set'>
 
 
@@ -33,5 +34,3 @@ type(my_generator)  # -> <class 'generator'>
 
 for i in my_generator:
     i  # -> # -> 0 2 4 6 8
-
-
