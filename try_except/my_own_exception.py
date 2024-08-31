@@ -11,3 +11,4 @@ class MyException(Exception):
 
 
 raise MyException("text")  # -> MyException: My Text Message
+  
