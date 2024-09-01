@@ -26,6 +26,6 @@ my_ork.attack()  # -> Ork attack with power 350
 my_ork  # -> Ork (level:7) (health_points: 700)
 
 
-class Elf()
+class Elf:
     def __init__(self):
         pass
