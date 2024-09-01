@@ -9,7 +9,7 @@ class Monster:
         self.attack_power = 50 * level
 
     def attack(self):
-        print(f"Monster attack with power {self.attack_power}")
+        return f"Monster attack with power {self.attack_power}"
 
 
 my_monster = Monster(level=7)
