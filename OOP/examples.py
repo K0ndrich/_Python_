@@ -1,7 +1,7 @@
 # Примеры
 
 
-class Monster:
+class Ork:
 
     def __init__(self, level: int):
         self.level = level
@@ -9,17 +9,23 @@ class Monster:
         self.attack_power = 50 * level
 
     def attack(self):
-        return f"Monster attack with power {self.attack_power}"
+        return f"Ork attack with power {self.attack_power}"
 
     def __str__(self):
-        return f"Monster (level:{self.level}) (health_points: {self.health_points})"
+        return f"Ork (level:{self.level}) (health_points: {self.health_points})"
 
 
-my_monster = Monster(level=7)
-my_monster.level  # -> 7
-my_monster.health_points  # -> 700
-my_monster.attack_power  # -> 350
+my_ork = Monster(level=7)
 
-my_monster.attack()  # -> Monster attack with power 350
+my_ork.level  # -> 7
+my_ork.health_points  # -> 700
+my_ork.attack_power  # -> 350
 
-my_monster
+my_ork.attack()  # -> Ork attack with power 350
+
+my_ork  # -> Ork (level:7) (health_points: 700)
+
+
+class Elf()
+    def __init__(self):
+        pass
