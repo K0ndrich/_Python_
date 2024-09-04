@@ -1,7 +1,10 @@
-# Продвинутая Функция Sorted
+# Продвинутая Функция SORTED
 
 # Функция Sorted сортирует последовательность по указаным параматрам (длина,значения)
+
 # Возвращает последовательность такой же длины
+
+# sorted(my_iterable_object , key=my_function )  # -> my_iterable_object (edited positions elements)
 
 
 my_list = [5, 2, 3, 1, 4]
