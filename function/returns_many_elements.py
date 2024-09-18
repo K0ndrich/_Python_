@@ -2,7 +2,7 @@
 
 
 # функция модифицирует словарь
-def modify_dict(old_dict: dict, **kwargs):  # -> -> tuple[dict, bool]
+def modify_dict(old_dict: dict, **kwargs) -> tuple[dict, bool]:
     # -> возвращает словарь, возвращает изменился ли словарь
 
     # словарь еще не изменился
