@@ -34,3 +34,38 @@ another_dict["x"] = 777
 
 my_dict  # -> {'x': 1, 'y': 2}
 another_dict  # -> {'x': 777, 'y': 2}
+
+
+# 3) -----   Глубокое Копирование Вложеных Изменяемых Обьектов (НЕПРАВИЛЬНОЕ КОПИРОВАНИЕ)   -------------------------------------------------------------------------------------------------------------------------------
+
+patient_data = {"heart_rate": [60, 61, 63, 60, 61]}
+
+patient_data_copy = patient_data.copy()
+
+patient_data  # -> {'heart_rate': [60, 61, 63, 60, 61]}  (одинаковые)
+patient_data_copy  # -> {'heart_rate': [60, 61, 63, 60, 61]}  (одинаковые)
+
+patient_data_copy["heart_rate"].append(777)
+
+patient_data  # -> {'heart_rate': [60, 61, 63, 60, 61, 777]}  (одинаковые)
+patient_data_copy  # -> {'heart_rate': [60, 61, 63, 60, 61, 777]}  (одинаковые)
+
+
+# 4) -----   Глубокое Копирование Вложеных Изменяемых Обьектов (ПРАВИЛЬНОЕ КОПИРОВАНИЕ)   -------------------------------------------------------------------------------------------------------------------------------
+
+from copy import deepcopy
+
+patient_data = {"heart_rate": [60, 61, 63, 60, 61]}
+
+patient_data_copy = deepcopy(patient_data)
+
+patient_data  # -> {'heart_rate': [60, 61, 63, 60, 61]}
+patient_data_copy  # -> {'heart_rate': [60, 61, 63, 60, 61]}
+
+id(patient_data)  # -> 2066792418368  (разные)
+id(patient_data_copy)  # -> 2448425127232  (разные)
+
+patient_data_copy["heart_rate"].append(777)
+
+patient_data  # -> {'heart_rate': [60, 61, 63, 60, 61]}  (не изменилось)
+patient_data_copy  # -> {'heart_rate': [60, 61, 63, 60, 61, 777]}  (изменилось)
