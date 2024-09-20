@@ -55,17 +55,17 @@ patient_data_copy  # -> {'heart_rate': [60, 61, 63, 60, 61, 777]}  (одинак
 
 from copy import deepcopy
 
-patient_data = {"heart_rate": [60, 61, 63, 60, 61]}
+my_data = {"my_list": [60, 61, 63, 60, 61]}
 
-patient_data_copy = deepcopy(patient_data)
+my_data_copy = deepcopy(my_data)
 
-patient_data  # -> {'heart_rate': [60, 61, 63, 60, 61]}
-patient_data_copy  # -> {'heart_rate': [60, 61, 63, 60, 61]}
+my_data  # -> {'my_list': [60, 61, 63, 60, 61]}
+my_data_copy  # -> {'my_list': [60, 61, 63, 60, 61]}
 
-id(patient_data)  # -> 2066792418368  (разные)
-id(patient_data_copy)  # -> 2448425127232  (разные)
+id(my_data)  # -> 2066792418368  (разные)
+id(my_data_copy)  # -> 2448425127232  (разные)
 
-patient_data_copy["heart_rate"].append(777)
+my_data_copy["my_list"].append(777)
 
-patient_data  # -> {'heart_rate': [60, 61, 63, 60, 61]}  (не изменилось)
-patient_data_copy  # -> {'heart_rate': [60, 61, 63, 60, 61, 777]}  (изменилось)
+my_data  # -> {'my_list': [60, 61, 63, 60, 61]}  (не изменилось)
+my_data_copy  # -> {'my_list': [60, 61, 63, 60, 61, 777]}  (изменилось)
