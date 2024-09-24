@@ -2,7 +2,7 @@
 
 # Функция MAP применяет нашу указаную функцию my_function к каждому елементу в последовательности my_iterable_object
 
-# map(my_function or built_in_fucntion or Object.method, *my_iterable_object)  # -> map object
+# map(my_function or built_in_function or Object.method, *my_iterable_object)  # -> map object
 
 
 # 1) -----   ПРИМЕР   ----------------------------------------------------------------------------------------------------------------------------------------------------------
