@@ -34,7 +34,10 @@ my_string.isalpha()  # -> True
 my_string = "{0},{1},{2}".format("a", "b", "c")  # -> a, b, c
 my_string = "{0},{1},{0}".format("a", "b", "c")  # -> a, b, a
 
-# .split("my_symbol") розделяет строку по указаному символу(или пробелу) и возвращает список елементов
+# .split("my_symbol") розделяет строку по указаному символу(или пробелу) и возвращает список [] елементов
 my_string = "hello - world"
 my_string.split()  # -> ['hello', '-', 'world']
 my_string.split("-")  # -> ['hello ', ' world']
+
+my_string = "1,2,3,4,5"
+my_string.split(",")  # -> ['1', '2', '3', '4', '5']

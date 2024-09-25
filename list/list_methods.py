@@ -40,7 +40,7 @@ my_list = [3, 6, 4, 2, 1, 8, 2]
 my_list.sort()  # -> [1, 2, 2, 3, 4, 6, 8]
 my_list.sort(reverse=True)  # -> [8, 6, 4, 3, 2, 2, 1]
 
-# .join(my_list) обединяет елементи с писка в одну строку
+# .join(my_list) обединяет елементи списка, состоящего из букв в одну строку str и возвращает ету строку
 my_list = ["h", "e", "l", "l", "o"]
 my_string = "".join(my_list)  # -> hello
 my_string = "-".join(my_list)  # -> h-e-l-l-o
