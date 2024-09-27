@@ -14,7 +14,8 @@ class MyClass:
         str(cls)  # -> <class '__main__.MyClass'>
 
         # метод new должен возвращать ссылку на новосозданный екзепляр обьекта класса
-        return super().__new__(cls)
+        # super() -> Object
+        return super().__new__(cls)  # -> Object.__new__(cls)
 
     # метод __init__ вызываеться в момент создания екзепляра обьекта класса
     # self хранит ссылку на один текущий екзепляр обьекта класса
