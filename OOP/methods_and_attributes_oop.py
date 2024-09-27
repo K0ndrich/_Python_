@@ -19,16 +19,18 @@ class MyClass:
     # метод __init__ вызываеться в момент создания екзепляра обьекта класса
     # self хранит ссылку на один текущий екзепляр обьекта класса
     def __init__(self, a, b):
+
         self  # -> <__main__.MyClass object at 0x000002758157C680>
+
         self.a = a
         self.b = b
 
     # метод __str__ управляет что будет выводить print() или возвращать функция str()
-    # def __str__(self):
-    # return f"my_object -> a:{self.a} , b:{self.b}"
-    # return "Hello"
+    def __str__(self):
+        # return f"my_object -> a:{self.a} , b:{self.b}"
+        pass
 
-    # создание моего методы
+    # создание своего метода
     def my_method(self):
         return 1
 
