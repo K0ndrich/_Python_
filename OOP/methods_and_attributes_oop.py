@@ -9,6 +9,7 @@ class MyClass:
 
     # метод new вызваеться  перед создание екзепляра обьекта класса
     # cls ссылаеться на текущий екзепляр класса, а именно на наш текущий класс MyClass
+    # def __new__(cls):  # -> Error
     def __new__(cls, *args, **kwargs):
 
         str(cls)  # -> <class '__main__.MyClass'>
