@@ -13,6 +13,7 @@ class MyClass:
         return str(cls)
 
     # метод __init__ вызываеться в момент создания екзепляра обьекта класса
+    # self хранит ссылку на один текущий екзепляр обьекта класса
     def __init__(self, a, b):
         self.a = a
         self.b = b
@@ -31,7 +32,6 @@ class MyClass:
 my_object = (
     MyClass()
 )  # -> -> <class '__main__.MyClass'> , -> <class '__main__.MyClass'>
-
 
 # возвращает словарь с полями(атрибутами) и названиями методов текущего класса
 MyClass.__dict__  # -> {'__module__': '__main__', '__init__': <function MyClass.__init__ at 0x0000015FFF5AD3A0>, '__str__': <function MyClass.__str__ at 0x0000015FFF5AD1C0>, 'my_method': <function MyClass.my_method at 0x0000015FFF5AD440>, '__dict__': <attribute '__dict__' of 'MyClass' objects> }
