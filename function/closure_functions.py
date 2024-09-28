@@ -15,14 +15,14 @@ def my_function(value):
         # функция замыкания взаемодествует с переменной из внешней функции
         print(f"Value from my_function() -> {value}")
 
-    # вызов функции замикания
+    # возвращ функции замикания
     return my_closure_function
 
 
 my_function("kondrich")  # -> Nothing
 
 
-# переменная f становить функцией
+# переменная f становить функцией my_closure_function
 f = my_function("kondrich")
 
 # вызов новосозданой функции
