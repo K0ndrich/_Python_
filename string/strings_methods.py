@@ -34,6 +34,14 @@ my_string.isalpha()  # -> True
 my_string = "{0},{1},{2}".format("a", "b", "c")  # -> a, b, c
 my_string = "{0},{1},{0}".format("a", "b", "c")  # -> a, b, a
 
+# rjust добавляет слева указаное количество символов перед значением строки
+my_string = "1"
+my_string.rjust(3, "0")  # -> 001
+
+# lust добавляет справа указаное количество символов перед значением строки
+my_string = "1"
+my_string.ljust(3, "0")  # -> 100
+
 # .split("my_symbol") розделяет строку по указаному символу(или пробелу) и возвращает список [] елементов
 my_string = "hello - world"
 my_string.split()  # -> ['hello', '-', 'world']
