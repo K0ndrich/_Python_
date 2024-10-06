@@ -49,7 +49,7 @@ class Mixin:
 # множественное наследование происходит слева на право, сначала наследуються атрибуты и методы Item, а потом уже от Mixin
 # Mixin (Миксины) всегда прописываються в конце наследования для возможного переопредиления методов родительского класса Item
 # НЕЛЬЗЯ ПИСАТЬ ВОТ ТАК -> class NoteBook(Mixin, Item):
-# NoteBook -> Item -> Mixin -> Object
+# NoteBook -> Item -> Mixin -> object
 class NoteBook(Item, Mixin):
     def print_info(self):
         Mixin.print_info(self)
