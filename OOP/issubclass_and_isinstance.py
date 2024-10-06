@@ -25,6 +25,8 @@ issubclass(MyClass2, MyClass1)  # -> True
 
 # тип данных int являеться дочерним классом от базового класса object
 issubclass(int, object)  # -> True
+issubclass(list, object)  # -> True
+
 
 MyClass1.__name__  # -> MyClass1
 
@@ -34,3 +36,20 @@ my_object = MyClass1()
 isinstance(my_object, MyClass1)  # -> True
 
 isinstance(my_object, MyClass2)  # -> False
+
+
+# -----   Розширяем Базовый Класс   -----------------------------------------------------------------------------------------------------------------------------------
+
+
+# унаследуемся от базового класса list
+class Vector(list):
+    # self хранит ссылку на наш текущий список list
+    def __str__(self):
+        return " - ".join(map(str, self))
+
+
+my_vector = Vector([1, 2, 3, 4, 5])
+
+my_vector  # -> 1 - 2 - 3 - 4 - 5
+
+type(my_vector)  # -> <class '__main__.Vector'>
