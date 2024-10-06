@@ -19,7 +19,7 @@ class MyClass:
         #
         # более правильно, можно будет заменять названия класса в коде
         return self.__class__(self.value + other_value)
-
+  
 
 my_object = MyClass(5)
 
