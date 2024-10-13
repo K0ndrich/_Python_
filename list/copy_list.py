@@ -9,6 +9,7 @@
 my_list1 = [1, 2, 3, 4, 5]
 my_list2 = my_list1
 
+
 my_list1  # -> [1, 2, 3, 4, 5]
 my_list2  # -> [1, 2, 3, 4, 5]
 
@@ -26,15 +27,18 @@ my_list2  # -> [1, 2, 3, 4, 10]
 
 # 2) -----   Копирование Первого Уровня   -------------------------------------------------------------------------------------------------------------------------------
 
-import copy 
+import copy
 
 # Копируються значения только первого уровня вложения
 # ["a", "b", "c"] Не копируеться, на них продолжают ссылаться
 
 my_list1 = [1, 2, ["a", "b", "c"], 4, 5]
 my_list2 = my_list1.copy()
-# или 
+# или
 # my_list2 = copy.copy(my_list1)
+# my_list2 = list(my_list1)
+# my_list2 = list[:]
+# my_list2 = [i for i in my_list1]
 
 my_list2.pop()
 my_list1  # -> [1, 2, ['a', 'b', 'c'], 4, 5]
@@ -60,12 +64,10 @@ from copy import deepcopy
 my_list1 = [1, 2, ["a", "b", "c"], 4, 5]
 
 my_list2 = copy.deepcopy(my_list1)
-# или 
+# или
 # my_list2 = deepcopy(my_list1)
 
 my_list2[2].append("d")
 
 my_list1  # -> [1, 2, ['a', 'b', 'c'], 4, 5]
 my_list2  # -> [1, 2, ['a', 'b', 'c', 'd'], 4, 5]
-
-
