@@ -52,9 +52,12 @@ my_list2  # -> [1, 2, ['a', 'b', 'c', 'd'], 4, 5]
 # Копируться значения первого и второго уровня вложения
 
 import copy
+from copy import deepcopy
 
 my_list1 = [1, 2, ["a", "b", "c"], 4, 5]
+
 my_list2 = copy.deepcopy(my_list1)
+# или my_list2 = deepcopy(my_list1)
 
 my_list2[2].append("d")
 
