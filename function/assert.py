@@ -91,7 +91,7 @@ def password_strength_2(value: str) -> str:
         return "Very Good"
     
     return "Weak" if count == 1 else "Good"
-
+  
 
 if __name__ == "__main__":
 
