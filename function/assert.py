@@ -116,3 +116,4 @@ if __name__ == "__main__":
     assert password_strength_1("12334556Zz") == "Very Good"
     assert password_strength_1("gazwsxedZ1") == "Very Good"
     assert password_strength_1("QAZWSXEDCZ1a") == "Very Good"
+  
