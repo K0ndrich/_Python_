@@ -10,6 +10,12 @@ my_list = [
     "yes" if my_num % 2 == 0 else "no" for my_num in range(5)
 ]  # -> ['yes', 'no', 'yes', 'no', 'yes']
 
+# усложненыний генератор списков
+my_list = [1, 2, 3, 4, 5]
+my_numbers = [2, 3, 4]
+my_value = [element in my_numbers for element in my_list]
+my_value  # -> [False, True, True, True, False]
+
 
 # 2) Генераторы Множеств
 my_set = {a for a in range(10) if a % 2 == 0}  # -> {0, 2, 4, 6, 8}
@@ -34,3 +40,5 @@ type(my_generator)  # -> <class 'generator'>
 
 for i in my_generator:
     i  # -> # -> 0 2 4 6 8
+
+# 5) Проверка с

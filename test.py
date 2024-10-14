@@ -1,5 +1,6 @@
-a = 5
-print(a)
+my_list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+my_numbers = [3, 4, 5, 6]
 
-if __name__ == "main":
-    pass
+a = [symbol in my_numbers for symbol in my_list]
+
+print(a)
