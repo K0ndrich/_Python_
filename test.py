@@ -1,9 +1,5 @@
-def some(a=[]):
-    a.append(1)
-    return a
+a = 5
+print(a)
 
-
-print(some())
-print(some([]))
-print(some())
-print(some([]))
+if __name__ == "main":
+    pass
