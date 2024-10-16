@@ -2,5 +2,5 @@ a = [1, 2, 3]
 b = [4, 5, 6]
 c = [7, 8, 9]
 
-for x in (a, b, c):
+for x in (a, b, c):asdasd
     print(x)
