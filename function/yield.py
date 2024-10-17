@@ -58,11 +58,11 @@ def find_word(file, word):
 try:
     with open("123.txt", encoding="utf-8") as my_file:
 
-        my_indexes = find_word(my_file, "генератор")
+        my_indexes = find_word(my_file, "kondrich")
 
         print(
             list(my_indexes)
-        )  # -> [0, 11, 22, 33, 44, 54, 65, 76, 86, 96, 107, 118, 128, 139, 149]
+        )  # -> [0, 9, 18, 27, 36, 45]
 
 # исключение при ненахождении файла
 except FileNotFoundError:
