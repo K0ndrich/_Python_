@@ -40,3 +40,24 @@ class MyClass3(MyClass1):
 my_object = MyClass3(4, 6, 8)  # -> - INIT <class '__main__.MyClass3'> -
 
 my_object.__dict__  # -> {'a': 4, 'b': 6, 'c': 8}
+
+
+# 1) -----   ПРИМЕР   -------------------------------------------------------------------------------------------------------------------
+
+
+# my_object -> B.start_init -> A.init -> B.end_init
+
+
+class A:
+    def __init__(self, a):
+        self.a = a
+
+
+class B(A):
+    def __init__(self, a, b):
+        super().__init__(a)
+        self.b = b
+
+
+my_object = B(3, 5)
+my_object.a, my_object.b  # -> 3 , 5

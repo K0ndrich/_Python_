@@ -1,6 +1,7 @@
 # Магический Метод __new__
 
-# Метод __new__ вызываеться перед созданеим екземпляра обьекта класса
+# Метод __new__ вызываеться перед созданеим екземпляра обьекта
+# Содержит CLS - ссылку на текущий класс
 
 
 class MyClass:
@@ -17,4 +18,28 @@ class MyClass:
 
 
 my_object = MyClass()
-print(my_object.__dict__)
+my_object.__dict__  # -> {}
+
+
+# 1) -----   ПРИМЕР   -------------------------------------------------------------------------------------------------------------------
+
+
+class A:
+
+    def __new__(cls, *args, **kwargs):
+
+        print("NEW")
+
+        obj = super().__new__(cls, *args, **kwargs)
+        return obj
+
+    def __init__(self):
+
+        print("INIT")
+
+        self.some = 1
+
+
+my_object = A()  # -> NEW , INIT
+
+my_object.some  # -> 1

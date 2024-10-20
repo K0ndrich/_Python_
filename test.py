@@ -1,10 +1,19 @@
-class A:
-    attr = 1
+class Cat:
 
-    def __init__(self):
-        self.attr = 2
+    name: str
+
+    def __init__(self, name):
+        self.name = name
+
+    def __repr__(self):
+        return f"Cat (name = {self.name})"
+
+    def __str__(self):
+        return f"It is my Cat {self.name}"
 
 
-a = A()
-print(a.attr)
-print(A.__dict__)
+c = Cat(name="Barsik")
+
+print(c)
+print(str(c))
+print(repr(c))
