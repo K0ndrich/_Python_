@@ -61,4 +61,7 @@ dir(
 )  # -> ['_Point__check_value', '_Point__x', '_Point__y', 'get_coord', 'set_coord']
 
 # так делать НЕЛЬЗЯ
+# получем значение private атрибута через екзепляр класса
 my_object._Point__x  # -> 7
+
+

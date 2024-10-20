@@ -1,7 +1,7 @@
 # Декоратор @property
 
-# @property нужен чтоб не ломать логику работы обьектов класса
-# @property позволяет взаемодействовать с атрибутами и методами класса только из вне и только тем которыми мы разрешим, которые public
+# @property позволяет создать динамический атрибут
+# @property позволяет вызывать метод(функцию) екзепляра класса не как метода, а как свойство
 
 
 class MyClass:
@@ -72,3 +72,37 @@ my_object.b  # -> 777
 my_object.a = 15
 
 my_object.__dict__  # -> {'b': 777, '_MyClass__a': 15}
+
+
+# 1) -----   ПРИМЕР   -------------------------------------------------------------------------------------------------------------------
+
+
+class Person:
+
+    first_name: str
+    last_name: str
+
+    def __init__(self, first_name: str, last_name: str):
+
+        self.first_name = first_name
+        self.last_name = last_name
+
+    @property
+    def full_name(self):
+        return f"{self.first_name} - {self.last_name}"
+
+    @full_name.setter
+    def full_name(self, value: str):
+        # берем аргумент строку и делим на два имени по указаному пробелу
+        name_surname = value.split(" ")
+
+        self.first_name = name_surname[0]
+        self.last_name = name_surname[1]
+
+
+p = Person("Max", "Kondrich")
+p.full_name  # -> Max - Kondrich
+
+p.full_name = "Sana Simonov"
+p.full_name  # -> Sana - Simonov
+

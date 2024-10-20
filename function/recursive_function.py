@@ -40,7 +40,8 @@ def recursive_correct(value):
 # !5 = 1 * 2 * 3 * 4 * 5
 
 
-def find_factorial(number):
+# находи факториал числа с помощью РЕКУРСИИ
+def find_factorial_with_recursive(number: int):
 
     # факториал от числа 1 равно 1
     if number <= 1:
@@ -52,7 +53,19 @@ def find_factorial(number):
     return result
 
 
-find_factorial(5)  # -> 120
+find_factorial_with_recursive(5)  # -> 120
+
+
+# НАХОДИМ ФОКТОРИАЛ ЧИСЛА С ПОМОЩЬЮ ЦИКЛА
+def find_factorial_with_loop(number: int):
+    value = 1
+    while number >= 1:
+        value = value * number
+        number -= 1
+    return value
+
+
+find_factorial_with_loop(5)  # -> 120
 
 
 # -----   Поиск Файла с Помощью Рекурсивной Функции   ------------------------------------------------------------------------------------------------------------------------------
