@@ -89,3 +89,34 @@ def my_function(a, b):
 
 # my_sum = my_function(3, 5)  # -> BEFORE , AFTER
 # my_sum  # -> 8
+
+# -----   Декоратор Который Может Принимать Внутрь Себя Аргументы   ---------------------------------------------------------------------------------------------------
+
+
+# декоратор указывает сколько раз будет повторяться функция, которую он оборачивает
+# n - количество повторений функции, которую оборачиваем в декоратор
+def repeat(n):
+    def my_decorator(my_func):
+        def wrapper(*args, **kwargs):
+            print("BEFORE")
+            # result хранит внутри себя результати выполнения всех функции
+            result = []
+
+            for x in range(n):
+                r = my_func(*args, **kwargs)
+                result.append(r)
+
+            print("AFTER")
+            return result
+
+        return wrapper
+
+    return my_decorator
+
+
+@repeat(3)
+def say_hello():
+    print("HELLO")
+
+
+say_hello()  # -> BEFORE , HELLO , HELLO , HELLO , AFTER
