@@ -12,8 +12,8 @@ except Exception:
     pass
 
 
-# обрабатываеть только указанные несколько типов ошибки 
-except (ValueError , NameError):
+# обрабатываеть только указанные несколько типов ошибки
+except (ValueError, NameError):
     pass
 
 
@@ -31,7 +31,8 @@ else:
 
 
 # finally выполняеться в любом случае в конце выполнение верхних блоков кода
-# try -> else -> finally
+# try -> finally
+# try -> else -> finally 
 finally:
     pass
 
