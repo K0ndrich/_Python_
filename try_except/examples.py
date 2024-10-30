@@ -27,7 +27,7 @@ except Exception:
     print("OUTHER")
 
 
-try:  # -> INNER , OUTHER
+try:  # -> INNER , OUTHER   
     try:
         raise ValueError(1)
     except Exception:
