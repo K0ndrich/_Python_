@@ -32,7 +32,7 @@ else:
 
 # finally выполняеться в любом случае в конце выполнение верхних блоков кода
 # try -> finally
-# try -> else -> finally 
+# try -> else -> finally
 finally:
     pass
 
