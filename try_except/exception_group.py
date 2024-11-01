@@ -53,7 +53,7 @@ try:
         "my exception group",
         [
             TypeError(1),
-            ValueError(2),
+            ValueError(2),  
         ],
     )
     raise my_except
