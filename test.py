@@ -1,18 +1,18 @@
-class Document:
-    pass
+def my_decorator(my_func):
 
-class SCVDocuments
-        
+    def wrapper(*args, **kwargs):
+        print("BEFORE")
+        result = my_func(*args, **kwargs)
+        print("AFTER")
+        return result
 
-
-class B:
-    def say_hi(self):
-        print("Hi from B")
-
-
-def some(my_object):
-    my_object.say_hi()
+    return wrapper
 
 
-my_a = B()
-some(my_a)
+@my_decorator
+def say_hi():
+    print("hello")
+    return 1
+
+
+say_hi()
