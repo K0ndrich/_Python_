@@ -53,7 +53,7 @@ try:
         "my exception group",
         [
             TypeError(1),
-            ValueError(2),  
+            ValueError(2),
         ],
     )
     raise my_except
@@ -65,5 +65,5 @@ except* TypeError as my_type_error:
 
 except* ValueError as my_value_error:
     print(
-        "ValueError - ", my_value_error  
+        "ValueError - ", my_value_error
     )  # -> ValueError -  my exception group (1 sub-exception)
